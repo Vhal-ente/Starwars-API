@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous" />
+  </head>
+  <body>
+    <!---- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="img src/Star_wars2.svg.png" alt="logo" width="75"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#characters">Characters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!---- Carousel -->
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="5"
+          aria-label="Slide 6"></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="6"
+          aria-label="Slide 7"></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="7"
+          aria-label="Slide 8"></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="8"
+          aria-label="Slide 9"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="img src/luke-skywalker-main.jpeg"
+            class="d-block w-100"
+            alt="luke-skywalker" />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img src/c-3po-main.jpeg"
+            class="d-block w-100"
+            alt="c-3po" />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/img src/r2-d2-main.jpeg"
+            class="d-block w-100"
+            alt="R2-D2" />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/img src/darth-vader-main.jpeg"
+            class="d-block w-100"
+            alt="Darth-Vader" />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/img src/leia-organa-main.jpeg"
+            class="d-block w-100"
+            alt="leia-organa" />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/img src/owen-lars-main.jpeg"
+            class="d-block w-100"
+            alt="owen-lars" />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/img src/r5-d4_main_image.jpeg"
+            class="d-block w-100"
+            alt="R5-D4" />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/img src/image_606ff7f7.jpeg"
+            class="d-block w-100"
+            alt="Biggs Darklighter" />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/img src/obi-wan-kenobi-main.jpeg"
+            class="d-block w-100"
+            alt="Obi-wan Kenobi" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <header class="bg-dark text-white text-center p-2">
+      <h1 id="characters">Star Wars Characters</h1>
+    </header>
+    <main class="container my-5">
+      <div class="row" id="characterList"></div>
+      <div
+        class="modal fade"
+        id="characterModal"
+        tabindex="-1"
+        aria-labelledby="characterModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="characterModalLabel">
+                Character Details
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h2 id="modalName"></h2>
+              <p>Gender: <span id="modalGender"></span></p>
+              <p>Height: <span id="modalHeight"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!---- About -->
+    <h2 id="about" class="fs-1 mt-5 mb-5 text-center">ABOUT</h2>
+    <p class="card-text p-5 text-bg-secondary text-bg-dark">
+      If you're looking for a more user-friendly single-page website that
+      displays this data, you might want to search for "Star Wars character list
+      website" on your preferred search engine. Keep in mind that the
+      availability of such websites may change over time, so make sure to check
+      the most recent search results.......
+    </p>
+
+    <!---- Contact Us -->
+    <h2 id="contact" class="fs-1 p-5 mt-5 text-center">CONTACT US</h2>
+
+    <div class="p-5">
+      <label for="comment">Comments:</label>
+      <textarea class="form-control" rows="7" id="comment" name="text ">
+Leave Your Comments here</textarea
+      >
+    </div>
+
+    <footer>
+      <!-- Footer Start-->
+      <p class="text-bg-dark text-center">
+        copyright &copy; Star-wars by Valentine
+      </p>
+    </footer>
+
+    <!---- END OF CONTAINER -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
