@@ -19,7 +19,7 @@ async function fetchCharacters() {
 function displayCharacters(characters) {
   characters.forEach(character => {
     const characterCard = document.createElement("div");
-    characterCard.className = "col-md-4 mb-4";
+    characterCard.className = "col-md-4 mb-4 mt-5";
 
     characterCard.innerHTML = `
       <div class="card">
